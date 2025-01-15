@@ -36,7 +36,7 @@ func main() {
 		fmt.Printf("Enter your Number tickets of users:")
 		fmt.Scan(&userTickets)
 
-		if userTickets <= remainingTickets {
+		if userTickets < remainingTickets {
 			// Booking Logic
 			remainingTickets = remainingTickets - userTickets
 			//bookings[0] = firstName + " " + lastName
